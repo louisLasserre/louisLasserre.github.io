@@ -1,0 +1,82 @@
+.header{
+    height: 450px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.header--texture{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    background: url(../images/0.jpg) center no-repeat ;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.8;
+}
+.header--mask{
+    position: absolute;
+    bottom: 0;
+    background: 0 0;
+    height: 42px;
+    width: 100%;
+    z-index :100;
+}
+
+.header--navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row; /*en ligne*/
+    justify-content: space-between; /*aux deux extremitées de la page*/
+    align-items: center; /*aligner sur la hauteur*/
+
+}
+
+.header--navbar--logo-title {
+    color: white;
+    font-size: 28px;
+}
+.header--navbar--menu-link {
+    margin-left: 40px;
+    color: white;
+    text-decoration:none;
+    
+    
+}
+
+.header--slogan{
+    text-align: center;
+    position: relative;top:200px
+}
+.header--slogan-title {
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+ 
+.header--slogan-btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background: #1abc9c;
+}
+.header--navbar-toggle {
+    width: 40 px;
+    height: 60 px;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+
+}
+.header--navbar-tog-icon, .header--navbar-tog-icon::before, .header--navbar-tog-icon::after {
+    display: block;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: red;
+    position: relative;
+   
+
+}
