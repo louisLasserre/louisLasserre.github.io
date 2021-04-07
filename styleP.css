@@ -182,6 +182,11 @@ body {
         padding-bottom: 350px;
     }    
 }
+@media screen and (max-width:450px) {
+    #quisuisje{
+        padding-bottom: 450px;
+    }    
+}
 
 /*-----------------------------header-----------------------*/
 #quisuisje {
