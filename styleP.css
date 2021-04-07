@@ -208,4 +208,11 @@ body {
     color: white;
 
 }
+/*-----------------------------alerte-----------------------*/
+#alerte{
+    border: 1px solid red;
+    height: 100px;
+    width:1500px;
+    text-align: center;
+}
 
