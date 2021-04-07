@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    
+    line-height: 1.6;
+
+
+}
+#showcase{
+    background-image: url("fond.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 30px;
+}
+#showcase h1{
+    font-size: 50px;
+    color: teal;
+    background-color: rgb(90, 90, 90, 0.9);
+    border-radius: 6px;
+    
+    
+}
+#showcase p{
+    font-size: 20px;
+    color: teal;
+    background-color: rgb(90, 90, 90, 0.9);
+    border-radius: 6px;
+}
+.button {
+    font-size: 18px;
+    text-decoration: none;
+    color: teal;
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+}
+.button:hover{
+    background-color: teal;
+    color: white;
+
+}
+
+
+
+
+#titreP{
+    
+    border: 3px solid black;
+    text-align: center;
+    position: absolute;top: 30%;
+    width: 100%;
+    
+}
+/*---------------------------------pagePrinciapl.html*/
+
+
+#DP{
+    max-width:1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    
+}
+
+
+.blocProjet{
+    
+    background-color: rgba(0, 0, 0, 1);  
+    color: rgb(255, 255, 255);   
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 4px;
+    opacity: 0.8;
+    transition: opacity .3s, transform .3s;
+    flex-grow: 1;
+
+}
+.blocProjet:hover{
+    transform: scale(1.02);
+    opacity: 1;
+}
+/*-----------------------bloc site web------------------------*/
+.blocProjet.site{
+    
+    border: 2px darkblue;
+    position: relative;
+}
+.blocProjet.site::before{
+    content: "";
+    background-image: url("caseWeb.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    border-radius: 4px;
+    }
+.blocProjet.site *{
+    position: relative;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+}
+.blocProjet.site header{
+    
+    position: relative;
+    background-color: darkblue;
+    border-radius: 4px;
+    opacity: 1;
+}
+/*-----------------------même chose mais pour les blocs de création 3d----------------------*/
+.blocProjet.troisd{
+    border: 2px darkblue;
+    position: relative;
+}
+.blocProjet.troisd::before{
+    content: "";
+
+    background-image: url("casetd.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    border-radius: 4px;
+    }
+.blocProjet.troisd *{
+    position: relative;
+    text-align: center;
+    
+    border-radius: 3px;
+}
+.blocProjet.troisd header{
+    
+    position: relative;
+    background-color: darkorange;
+    border-radius: 4px;
+    opacity: 1;
+}
+/*--------------------------responsive du header--------------------------*/
+
+@media screen and (max-width:950px) {
+    #quisuisje{
+        padding-bottom: 80px;
+    }
+}
+@media screen and (max-width:750px) {
+    #quisuisje{
+        padding-bottom: 150px;
+    }
+}
+@media screen and (max-width:650px) {
+    #quisuisje{
+        padding-bottom: 250px;
+    }   
+}
+@media screen and (max-width:530px) {
+    #quisuisje{
+        padding-bottom: 350px;
+    }    
+}
+
+/*-----------------------------header-----------------------*/
+#quisuisje {
+    
+    height: 300px;
+    color: white;
+    background-color: teal;
+    position: relative;
+}
+#quisuisje h3{
+    position: absolute;top: 10%;left: 15%;
+    border: 3px black;
+    text-align: center;
+    width: 70%;
+}
+#quisuisje ul{
+    position: absolute;bottom: 10px;left: 10px;
+    list-style-type: none;
+    color: white;
+
+}
+
