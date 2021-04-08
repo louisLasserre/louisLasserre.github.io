@@ -166,6 +166,9 @@ body {
     #quisuisje{
         padding-bottom: 80px;
     }
+    #alerte{
+        padding-bottom: 50px;
+    }
 }
 @media screen and (max-width:750px) {
     #quisuisje{
@@ -175,17 +178,26 @@ body {
 @media screen and (max-width:650px) {
     #quisuisje{
         padding-bottom: 250px;
+    }
+    #alerte{
+        padding-bottom: 70px;
     }   
 }
 @media screen and (max-width:530px) {
     #quisuisje{
         padding-bottom: 350px;
+    }
+    #alerte{
+        padding-bottom: 90px;
     }    
 }
 @media screen and (max-width:450px) {
     #quisuisje{
         padding-bottom: 450px;
-    }    
+    }
+    #alerte{
+        padding-bottom: 110px;
+    }   
 }
 
 /*-----------------------------header-----------------------*/
