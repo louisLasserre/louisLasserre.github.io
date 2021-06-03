@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Audiostyle.css">
+    <title>Musique player</title>
+</head>
+
+<body onload="onload()">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <h2>Welcome to my music player</h2>
+    <section class="allaudios">
+
+        <div class="audio">
+            <p>I'm Back</p>
+            <audio controls='controls' id="Back"><source src="./musique/I'm Back.mp3"></audio>
+        </div>
+
+        <div class="audio">
+            <p>it's my night</p>
+            <audio controls='controls'><source src="./musique/It's My Night.mp3"></audio>
+        </div>
+
+        <div class="audio">
+            <p>Going For Greatness</p>
+            <audio controls='controls'><source src="./musique/Going For Greatness.mp3"></audio>
+        </div>
+
+        <div class="audio">
+            <p>I am defiant</p>
+            <audio controls='controls'><source src="./musique/I Am Defiant.mp3"></audio>
+        </div>
+
+        <div class="audio">
+            <p>Fearless</p>
+            <audio controls='controls'><source src="./musique/I Am Fearless.mp3"></audio>
+        </div>
+
+    </section>
+    <input type="button" value="PLAY" onclick="play()">
+    <input type="button" value="random" onclick="random()">
+    <section class="test">
+
+    </section>
+
+
+
+</body>
+
+<script src="audioJS.js"></script>
+
+</html>
